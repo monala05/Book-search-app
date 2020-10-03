@@ -9,7 +9,7 @@
 <style>
 
   body{
-    background-color: #222222;
+    background-color: #000000;
   }
 
   .white-text{
@@ -17,16 +17,17 @@
   }
 
   .center{
-    margin: auto;
-    width: 60%
-    margin:auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -125px 0px 0px -150px;
   }
 
 </style>
 
 <body>
   <div class="center">
-    <h1>Enter a book to search!</h1>
+    <h1 class="white-text">Enter a book to search!</h1>
     <form>
       <input type ="string" required placeholder="search here...">
       <button type ="submit">submit</button>
