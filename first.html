@@ -1,19 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Book search website </title>
+  <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+  <script type = "text/javascript">
+    google.books.load()
+  </script>
+  function initialize() {
+      var viewer = new google.books.DefaultViewer(document.getElementById('viewerCanvas'));
+      viewer.load('ISBN:9781501259258');
+  }
+  google.books.setOnLoadCallback(initialize);
+  </script>
 </head>
+
 <style>
+  /*var apiKey = "AIzaSyDZJ8zBoAGwQDJ5krJJ3E8KZVXLuUqZE7k"*/
 
   body{
-    background-color: #000000;
+    background-color: #FFF;
   }
 
   .white-text{
-    color: white;
+    color: black;
   }
 
   .center{
@@ -26,12 +41,22 @@
 </style>
 
 <body>
+  <script type = "text/javascript">
+   function displayResults(){
+    var x = document.getElementById('searchBar').value;
+  }
+  </script>
+
   <div class="center">
-    <h1 class="white-text">Enter a book to search!</h1>
+    <label for ="bar" class="white-text">Enter a book to search!</label>
     <form>
-      <input type ="string" required placeholder="search here...">
-      <button type ="submit">submit</button>
+      <input id ="searchBar" size = "33" type ="string" placeholder="search here...">
+      <button onclick="displayResults()" type ="submit">submit</button>
     </form>
   </div>
+
+  <!--<div id = "display" class ="white-text"> </div>-->
+  <div id="viewerCanvas" style="width: 200px; height: 200px"></div>
+
 </body>
 </html>
