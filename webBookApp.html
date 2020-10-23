@@ -1,0 +1,58 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book search website </title>
+
+  <!-- bootstrap files -->
+
+  <link
+    rel = "stylesheet"
+    href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <!--user defined pages -->
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link rel = "stylesheet" href = "bookApp.css">
+
+</head>
+
+
+
+<body>
+  <div class ="fill d-flex h-100 p-5  flex-column bg-black">
+      <h2 id ="title" class= "text-center">Enter a book to search!</h2>
+      <form>
+      <div class ="row">
+        <div id ="input" class = "row input-group mx-auto col-lg-6 col-md-8 col-sm-12">
+          <input id = "search-box" type ="text" class = "form-control" placeholder="search">
+          <button onclick="window.location.reload" id = "search-button" type="submit" class="btn btn-light">Search!</button>
+        </form>
+        </div>
+      </div>
+
+  <!--<div id = "content" class = "container"> -->
+  <ul id ="books" class = "container text-center"></ul>
+  <!--<h1>  brah </h1>-->
+  </div>
+
+
+
+
+  <!-- jquery-->
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <!-- google API code -->
+  <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+  <script src = webBookApp.js></script>
+</body>
+</html>
