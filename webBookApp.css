@@ -1,0 +1,51 @@
+  /*var apiKey = "AIzaSyDZJ8zBoAGwQDJ5krJJ3E8KZVXLuUqZE7k"*/
+
+  body {
+    font-size: 20px;
+    background-image: url('https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1512&q=80');
+    background-color: #222222;
+    background-repeat: no-repeat;
+  }
+
+  img{
+    margin: auto;
+    display: block;
+  }
+
+  h2{
+    font-size: 128px;
+    font-family: 'Tangerine', serif;
+    color: white;
+  }
+  .white-text{
+    color: white;
+  }
+
+  .center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+  .box {
+  display: flex;
+  align-items: center;
+  justify-content: bottom;
+}
+
+
+  .fill {
+      min-height: 50%;
+      height: 100%;
+      background-color: ;
+  }
+
+  .half{
+    min-height: 30%;
+  }
+
+  .marg{
+    margin-top: 50px;
+  }
